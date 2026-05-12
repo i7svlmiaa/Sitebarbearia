@@ -1,0 +1,558 @@
+ <html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberKing DUDU - Barbearia Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+    <body>
+     <!-- ========== HEADER / NAVEGAÇÃO ========== -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-scissors"></i>
+                Barber<span>King</span>
+            </a>
+       <nav id="navbar">
+       <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#servico">Servico</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#agendamento">Agendamento</a></li>
+        <li><a href="#localizacao">Localizacao</a></li>
+        <li><a href="#contato">Contato</a></li>
+        </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-subtitle">Bem-vindo à</p>
+            <h1>Barber<span>King DUDU</span></h1>
+            <p class="hero-text">Estilo, tradição e modernidade em cada corte. 
+               Sua melhor versão começa aqui.</p>
+            <div class="hero-buttons">
+                <a href="#agendamento" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Agendar Agora
+                </a>
+                <a href="#servicos" class="btn btn-outline">
+                    <i class="fas fa-cut"></i> Nossos Serviços
+                </a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#servicos"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ========== SOBRE / INFO ========== -->
+    <section class="about-info">
+        <div class="container about-grid">
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <h3>Horário</h3>
+                <p>Seg - Sex: 9h às 20h<br>Sáb: 9h às 18h<br>Dom: Fechado</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Endereço</h3>
+                <p>Av Central - Nucleo Bandeirante<br>Brasília - DF 71919-000</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Telefone</h3>
+                <p>(61) 99999-8888<br>(61) 3333-4444</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVIÇOS ========== -->
+    <section id="servico" class="services">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">O que oferecemos</p>
+                <h2 class="section-title">Nossos <span>Serviços</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <!-- Serviço 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Corte Masculino</h3>
+                    <p>Corte moderno ou clássico com acabamento perfeito e lavagem inclusa.</p>
+                    <div class="service-price">
+                        <span class="price">R$ 45,00</span>
+                        <span class="duration"><i class="far fa-clock"></i> 40 min</span>
+                    </div>
+                    <button class="btn btn-sm btn-agendar" data-servico="Corte Masculino">
+                        Agendar
+                    </button>
+                </div>
+                <!-- Serviço 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-razor"></i>
+                    </div>
+                    <h3>Barba Completa</h3>
+                    <p>Barba feita com navalha, toalha quente e produtos premium.</p>
+                    <div class="service-price">
+                        <span class="price">R$ 35,00</span>
+                        <span class="duration"><i class="far fa-clock"></i> 30 min</span>
+                    </div>
+                    <button class="btn btn-sm btn-agendar" data-servico="Barba Completa">
+                        Agendar
+                    </button>
+                </div>
+                <!-- Serviço 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Corte + Barba</h3>
+                    <p>Combo completo de corte e barba com tratamento especial.</p>
+                    <div class="service-price">
+                        <span class="price">R$ 70,00</span>
+                        <span class="duration"><i class="far fa-clock"></i> 60 min</span>
+                    </div>
+                    <button class="btn btn-sm btn-agendar" data-servico="Corte + Barba">
+                        Agendar
+                    </button>
+                </div>
+                <!-- Serviço 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Pigmentação</h3>
+                    <p>Pigmentação capilar e de barba para um visual mais preenchido.</p>
+                    <div class="service-price">
+                        <span class="price">R$ 55,00</span>
+                        <span class="duration"><i class="far fa-clock"></i> 45 min</span>
+                    </div>
+                    <button class="btn btn-sm btn-agendar" data-servico="Pigmentação">
+                        Agendar
+                    </button>
+                </div>
+                <!-- Serviço 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Tratamento Capilar</h3>
+                    <p>Hidratação profunda e tratamento para cabelos saudáveis.</p>
+                    <div class="service-price">
+                        <span class="price">R$ 60,00</span>
+                        <span class="duration"><i class="far fa-clock"></i> 50 min</span>
+                    </div>
+                    <button class="btn btn-sm btn-agendar" data-servico="Tratamento Capilar">
+                        Agendar
+                    </button>
+                </div>
+                <!-- Serviço 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Corte Infantil</h3>
+                    <p>Corte especial para os pequenos com muita paciência e diversão.</p>
+                    <div class="service-price">
+                        <span class="price">R$ 35,00</span>
+                        <span class="duration"><i class="far fa-clock"></i> 30 min</span>
+                    </div>
+                    <button class="btn btn-sm btn-agendar" data-servico="Corte Infantil">
+                        Agendar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+          </div>
+          <!-- ========== EQUIPE ========== -->
+    <section id="equipe" class="team">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Conheça nossos</p>
+                <h2 class="section-title">Profissionais <span>Especializados</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="team-grid">
+                <!-- Barbeiro 1 -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="img/barbeiro1.jpg" alt="Foto barbeiro Thiago">
+                        <div class="team-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="team-overlay">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Thiago Brunno</h3>
+                        <p class="role">Barbeiro Master</p>
+                        <p class="team-desc">7 anos de experiência. Especialista em cortes clássicos e degradê.</p>
+                        <div class="team-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Barbeiro 2 -->
+                <div class="team-card">
+                    <div class="team-image" >
+                        <img src="img/barbeiro2.jpg" alt="Foto barbeiro Rafael">
+                        <div class="team-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="team-overlay">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Rafael Oliveira</h3>
+                        <p class="role">Barbeiro Sênior</p>
+                        <p class="team-desc">5 anos de experiência. Especialista em barba e pigmentação.</p>
+                        <div class="team-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Barbeiro 3 -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="img/barbeiro3.jpg" alt="Barbeiro dos famosos">
+                        <div class="team-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="team-overlay">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Gabriel Henrique</h3>
+                        <p class="role">Barbeiro Especialista</p>
+                        <p class="team-desc">8 anos de experiência. Expert em cortes modernos e design de sobrancelha.</p>
+                        <div class="team-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Barbeiro 4 -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="img/barbeiro4.jpg">
+                        <div class="team-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="team-overlay">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Sandro Santos</h3>
+                        <p class="role">Barbeiro Master</p>
+                        <p class="team-desc">5 anos de experiência. Especialista em cortes de famosos e tratamentos.</p>
+                        <div class="team-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- ========== AGENDAMENTO ONLINE ========== -->
+    <section id="agendamento" class="scheduling">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Reserve seu horário</p>
+                <h2 class="section-title">Agendamento <span>Online</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="scheduling-wrapper">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-name">
+                                <i class="fas fa-user"></i> Nome Completo
+                            </label>
+                            <input type="text" id="booking-name" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-phone">
+                                <i class="fas fa-phone"></i> Telefone / WhatsApp
+                            </label>
+                            <input type="tel" id="booking-phone" placeholder="(11) 99999-9999" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-email">
+                                <i class="fas fa-envelope"></i> E-mail
+                            </label>
+                            <input type="email" id="booking-email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-service">
+                                <i class="fas fa-cut"></i> Serviço
+                            </label>
+                            <select id="booking-service" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="Corte Masculino - R$ 45,00">Corte Masculino - R$ 45,00</option>
+                                <option value="Barba Completa - R$ 35,00">Barba Completa - R$ 35,00</option>
+                                <option value="Corte + Barba - R$ 70,00">Corte + Barba - R$ 70,00</option>
+                                <option value="Pigmentação - R$ 55,00">Pigmentação - R$ 55,00</option>
+                                <option value="Tratamento Capilar - R$ 60,00">Tratamento Capilar - R$ 60,00</option>
+                                <option value="Corte Infantil - R$ 35,00">Corte Infantil - R$ 35,00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-barber">
+                                <i class="fas fa-user-tie"></i> Barbeiro
+                            </label>
+                            <select id="booking-barber" required>
+                                <option value="">Selecione um barbeiro</option>
+                               <option value="Thiago Brunno">Thiago Brunno</option>
+                               <option value="Rafael Oliveira">Rafael Oliveira</option>
+                               <option value="Gabriel Henrique">Gabriel Henrique</option>
+                               <option value="Sandro Santos">Sandro Santos</option> 
+                                <option value="Sem preferência">Sem preferência</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-date">
+                                <i class="fas fa-calendar-alt"></i> Data
+                            </label>
+                            <input type="date" id="booking-date" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-time">
+                                <i class="fas fa-clock"></i> Horário
+                            </label>
+                            <select id="booking-time" required>
+                                <option value="">Selecione um horário</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:40">09:40</option>
+                                <option value="10:20">10:20</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:40">11:40</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:40">13:40</option>
+                                <option value="14:20">14:20</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:40">15:40</option>
+                                <option value="16:20">16:20</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:40">17:40</option>
+                                <option value="18:20">18:20</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:40">19:40</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-notes">
+                                <i class="fas fa-comment-dots"></i> Observações
+                            </label>
+                            <input type="text" id="booking-notes" placeholder="Alguma observação?">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-calendar-check"></i> Confirmar Agendamento
+                    </button>
+                </form>
+                <!-- Confirmação -->
+                <div id="bookingConfirmation" class="booking-confirmation hidden">
+                    <div class="confirmation-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Agendamento Confirmado!</h3>
+                    <div id="confirmationDetails" class="confirmation-details"></div>
+                    <p class="confirmation-msg">
+                        Você receberá uma confirmação por WhatsApp em instantes.
+                    </p>
+                    <button class="btn btn-primary" id="newBookingBtn">
+                        Novo Agendamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== LOCALIZAÇÃO ========== -->
+   <section id="localizacao" class="location">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Onde estamos</p>
+                <h2 class="section-title">Nossa <span>Localização</span></h2>
+            </div>
+            <div class="location-wrapper">
+                <div class="location-info">
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Av Central - Nucleo Bandeirante<br>Brasília - DF 71919-000</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(61) 99109-3927<br>(61) 3333-4444</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário</h4>
+                            <p>Seg a Sáb - 09h às 20h<br>Dom - Fechado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps?q=Núcleo+Bandeirante+Brasília+DF&output=embed"  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+   </section>
+  <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Fale conosco</p>
+                <h2 class="section-title">Entre em <span>Contato</span></h2>
+            </div>
+            <div class="contact-wrapper">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Telefone</label>
+                        <input type="tel" placeholder="(61) 99999-9999" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Email</label>
+                        <input type="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Mensagem</label>
+                        <textarea rows="5" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-col">
+                <a href="#" class="footer-logo">
+                    <i class="fas fa-scissors"></i>
+                    Barber<span>King</span>
+                </a>
+
+                <p>
+                    A melhor experiência em cortes masculinos, Femininos, infantis, barba e estilo premium em Brasília.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#agendamento">Agendamento</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        (61) 9987-2954
+                    </li>
+
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        BarberKing@gmail.com
+                    </li>
+
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Nucleo Bandeirante - DF
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Redes Sociais</h4>
+
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 BarberKing - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
